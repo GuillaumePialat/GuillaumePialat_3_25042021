@@ -7,280 +7,178 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/menu.css" />
+    <title>ohmyfood</title>
+</head>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/menu.css" />
     <title>ohmyfood</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="retourindex">
-            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-        </div>
-        <div>
-            <img src="images/logo/ohmyfood@2x.svg" alt="logo">
-        </div>
+        <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+        <h1><img src="images/logo/ohmyfood@2x.svg" alt="logo"></h1>
     </header>
 
-    <main>
-        <section class="restaurant_menu">
+    <section class="restaurant">
+        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photoa la francaise">
+        <div class="nom_restaurant">
+            <h2>À la Française</h2>
+            <i class="far fa-heart"></i>
+        </div>
+    </section>
+
+    <section class="menu">
+
+        <!-- entrées -->
+        <article class="entrees_menu">
             <div>
-                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photoalafrancaise">
+                <h3>ENTRÉES</h3>
+                <div class="espace_h3"></div>
             </div>
-        </section>
-
-        <section class="titre_menu">
-            <div class="menu_titre">
-                <h1>À la française</h1>
-            </div>
-            <div class="coeur_icone">
-                <i class="fas fa-heart"></i>
-            </div>
-        </section>
-
-        <section class="choix_menu">
-
-            <!-- LES ENTRÉES -->
-            <div class="menu_container">
-                <div class="card_menu_entrees">
-                    <div class="menu_choix_titre">
-                        <p>ENTRÉES</p>
+            <div class="menu__restaurant__entrees card">
+                <div class="card__infos">
+                    <h4>Tartare de poulpe acidulé</h4>
+                    <div class="card__infos__description">
+                        <p class="card__infos__description__accompagnement">
+                            Aux zestes d'orange
+                        </p>
+                        <p class="card__infos__description__prix">25€</p>
                     </div>
-
-
-                    <!-- Tartare de poulpe acidulé -->
-                    <div class="card_menu_choix_card">
-                        <div class="menu_choix_card_repas">
-                            <div class="menu_choix_card_repas_info">
-                                <div class="menu_choix_card_repas_info_titre">
-                                    <h3>Tartare de poulpe acidulé</h3>
-                                </div>
-                                <div class="menu_choix_card_repas_info_desc">
-                                    <div class="menu_choix_card_repas_info_desc_texte">
-                                        <p>Aux zestes d'orange</p>
-                                    </div>
-                                    <div class="menu_choix_card_repas_info_desc_prix">
-                                        <p>25€</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu_choix_card_repas_selection">
-                                <span class="menu_choix_card_repas_selection_container"><i
-                                        class="fas fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- fin Tartare de poulpe acidulé -->
-
-                    <!-- Velouté de légumes d'antan -->
-                    <div class="card_menu_choix_card">
-                        <div class="menu_choix_card_entree">
-                            <div class="menu_choix_card_repas_info">
-                                <div class="menu_choix_card_repas_info_titre">
-                                    <h3>Velouté de légumes d'antan</h3>
-                                </div>
-                                <div class="menu_choix_card_repas_info_desc">
-                                    <div class="menu_choix_card_repas_info_desc_texte">
-                                        <p>Carotte, panais, topinambour</p>
-                                    </div>
-                                    <div class="menu_choix_card_repas_info_desc_prix">
-                                        <p>35€</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu_choix_card_repas_selection">
-                                <span class="menu_choix_card_repas_selection_container"><i
-                                        class="fas fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- fin Velouté de légumes d'antan -->
                 </div>
+                <div class="card__check"><i class="fas fa-check-circle"></i></div>
             </div>
 
-
-            <!-- LES PLATS -->
-            <div class="menu_container">
-                <div class="card_menu_plats">
-                    <div class="menu_choix_titre">
-                        <p>PLATS</p>
+            <div class="menu__restaurant__entrees card">
+                <div class="card__infos">
+                    <h4>Velouté de légumes d'antan</h4>
+                    <div class="card__infos__description">
+                        <p class="card__infos__description__accompagnement">
+                            Carotte, panais, topinambour
+                        </p>
+                        <p class="card__infos__description__prix">35€</p>
                     </div>
-                    
-                    <!-- Coquilles Saint-Jacques -->
-                    <div class="card_menu_choix_card">
-                        <div class="menu_choix_card_repas">
-                            <div class="menu_choix_card_repas_info">
-                                <div class="menu_choix_card_repas_info_titre">
-                                    <h3>Coquilles Saint-Jacques</h3>
-                                </div>
-                                <div class="menu_choix_card_repas_info_desc">
-                                    <div class="menu_choix_card_repas_info_desc_texte">
-                                        <p>Accompagnées d'une purée de panais/p>
-                                    </div>
-                                    <div class="menu_choix_card_repas_info_desc_prix">
-                                        <p>40€</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu_choix_card_repas_selection">
-                                <span class="menu_choix_card_repas_selection_container"><i
-                                        class="fas fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin Coquilles Saint-Jacques -->
-
-                    <!-- Magret de canard -->
-                    <div class="card_menu_choix_card">
-                        <div class="menu_choix_card_repas">
-                            <div class="menu_choix_card_repas_info">
-                                <div class="menu_choix_card_repas_info_titre">
-                                    <h3>Magret de canard</h3>
-                                </div>
-                                <div class="menu_choix_card_repas_info_desc">
-                                    <div class="menu_choix_card_repas_info_desc_texte">
-                                        <p>Et parmentier de pommes de terre</p>
-                                    </div>
-                                    <div class="menu_choix_card_repas_info_desc_prix">
-                                        <p>35€</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu_choix_card_repas_selection">
-                                <span class="menu_choix_card_repas_selection_container"><i
-                                        class="fas fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin Magret de canard -->
-
-                    <!-- Pigeonneau d’Ille-et-Vilaine -->
-                    <div class="card_menu_choix_card">
-                        <div class="menu_choix_card_repas">
-                            <div class="menu_choix_card_repas_info">
-                                <div class="menu_choix_card_repas_info_titre">
-                                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                                </div>
-                                <div class="menu_choix_card_repas_info_desc">
-                                    <div class="menu_choix_card_repas_info_desc_texte">
-                                        <p>Sur son lit de gnocchis aux légumes</p>
-                                    </div>
-                                    <div class="menu_choix_card_repas_info_desc_prix">
-                                        <p>44€</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu_choix_card_repas_selection">
-                                <span class="menu_choix_card_repas_selection_container"><i
-                                        class="fas fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin Pigeonneau d’Ille-et-Vilaine -->
+                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
+
+                <div class="menu__restaurant__entrees card">
+                    <div class="card__infos">
+                        <h4>Soupe à l'oignon</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Revisité
+                            </p>
+                            <p class="card__infos__description__prix">20€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                    </div>
+        </article>
+
+        <!-- plats -->
+        <article class="plats_menu">
+            <div>
+                <h3>Plats</h3>
+                <div class="espace_h3"></div>
+            </div>
+            <div class="menu__restaurant__plats card">
+                <div class="card__infos">
+                    <h4>Coquilles Saint-Jacques</h4>
+                    <div class="card__infos__description">
+                        <p class="card__infos__description__accompagnement">
+                            Accompagnées d'une purée de panais
+                        </p>
+                        <p class="card__infos__description__prix">40€</p>
+                    </div>
+                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                </div>
+
+                <div class="menu__restaurant__plats card">
+                    <div class="card__infos">
+                        <h4>Magret de canard</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Et parmentier de pommes de terre
+                            </p>
+                            <p class="card__infos__description__prix">35€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                    </div>
+
+                    <div class="menu__restaurant__plats card">
+                        <div class="card__infos">
+                            <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                            <div class="card__infos__description">
+                                <p class="card__infos__description__accompagnement">
+                                    Sur son lit de gnocchis aux légumes
+                                </p>
+                                <p class="card__infos__description__prix">44€</p>
+                            </div>
+                            <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+        </article>
+
+        <!-- désserts -->
+        <article class="desserts_menu">
+            <div>
+                <h3>DÉSSERTS</h3>
+                <div class="espace_h3"></div>
             </div>
 
-            <!-- LES DESSERTS-->
-            <div class="menu_container">
-                <div class="card_menu_desserts">
-                    <div class="menu_choix_titre">
-                        <p>DESSERTS</p>
+            <div class="menu__restaurant__desserts card">
+                <div class="card__infos">
+                    <h4>Pétales de violettes glacés</h4>
+                    <div class="card__infos__description">
+                        <p class="card__infos__description__accompagnement">
+                            Et purée de noisettes
+                        </p>
+                        <p class="card__infos__description__prix">18€</p>
                     </div>
-
-                     <!-- Pétales de violettes glacés -->
-                     <div class="card_menu_choix_card">
-                        <div class="menu_choix_card_repas">
-                            <div class="menu_choix_card_repas_info">
-                                <div class="menu_choix_card_repas_info_titre">
-                                    <h3>Pétales de violettes glacés</h3>
-                                </div>
-                                <div class="menu_choix_card_repas_info_desc">
-                                    <div class="menu_choix_card_repas_info_desc_texte">
-                                        <p>Et purée de noisettes</p>
-                                    </div>
-                                    <div class="menu_choix_card_repas_info_desc_prix">
-                                        <p>18€</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu_choix_card_repas_selection">
-                                <span class="menu_choix_card_repas_selection_container"><i
-                                        class="fas fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin Pétales de violettes glacés -->
-
-                    <!-- Fondant au chocolat -->
-                    <div class="card_menu_choix_card">
-                        <div class="menu_choix_card_repas">
-                            <div class="menu_choix_card_repas_info">
-                                <div class="menu_choix_card_repas_info_titre">
-                                    <h3>Fondant au chocolat</h3>
-                                </div>
-                                <div class="menu_choix_card_repas_info_desc">
-                                    <div class="menu_choix_card_repas_info_desc_texte">
-                                        <p>Revisité</p>
-                                    </div>
-                                    <div class="menu_choix_card_repas_info_desc_prix">
-                                        <p>22€</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu_choix_card_repas_selection">
-                                <span class="menu_choix_card_repas_selection_container"><i
-                                        class="fas fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin Fondant au chocolat -->
-
-                    <!-- Mousse au chocolat  -->
-                    <div class="card_menu_choix_card">
-                        <div class="menu_choix_card_repas">
-                            <div class="menu_choix_card_repas_info">
-                                <div class="menu_choix_card_repas_info_titre">
-                                    <h3>Mousse au chocolat</h3>
-                                </div>
-                                <div class="menu_choix_card_repas_info_desc">
-                                    <div class="menu_choix_card_repas_info_desc_texte">
-                                        <p>Au piment d'Espelette et à la truffe noire</p>
-                                    </div>
-                                    <div class="menu_choix_card_repas_info_desc_prix">
-                                        <p>23€</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu_choix_card_repas_selection">
-                                <span class="menu_choix_card_repas_selection_container"><i
-                                        class="fas fa-check-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fin Millefeuille croustillant -->
+                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>        
-        </section>
 
-        <section>
-            <div class="commande_container">
-                <div class="commandes">
-                    <button class="boutton_commandes">Commander</button>
+            <div class="menu__restaurant__desserts card">
+                <div class="card__infos">
+                    <h4>Fondant au chocolat</h4>
+                    <div class="card__infos__description">
+                        <p class="card__infos__description__accompagnement">
+                            Revisité
+                        </p>
+                        <p class="card__infos__description__prix">22€</p>
+                    </div>
+                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
-        </section>
-    </main>
+
+                <div class="menu__restaurant__desserts card">
+                    <div class="card__infos">
+                        <h4>Millefeuille croustillant</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Myrtilles et pâte d’amande
+                            </p>
+                            <p class="card__infos__description__prix">22€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                    </div>
+        </article>
+        <button class="btn">Commander</button>
+    </section>
 
     <footer class="footer">
-        <div class="container_footer">
-            <div class="footer_titre">
-                <img src="images/logo/ohmyfood@2x.svg" alt="logotitrefooter">
-            </div>
-            <ol class="footer_navigation">
-                <li><i class="fas fa-utensils">&nbsp;</i>Proposer un restaurant</li>
-                <li><i class="fas fa-hands-helping">&nbsp;</i>Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li><a href="mailto"></a>Contact</li>
-            </ol>
-        </div>
+        <h5 class="footer_h5">ohmyfood</h5>
+        <p class="footer_paragraphe"><i class="fas fa-utensils"></i>&nbsp;Proposer un restaurant</p>
+        <p class="footer_paragraphe"><i class="fas fa-hands-helping"></i>&nbsp;Devenir partenaire</p>
+        <p class="footer_paragraphe">Mentions légales</p>
+        <p class="footer_paragraphe">Contact</p>
     </footer>
 </body>
 
