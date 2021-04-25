@@ -1,4 +1,6 @@
-@import "footer";
+@import "base/variables.scss";
+@import "base/footer.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 
 * {
     box-sizing: border-box;
@@ -23,7 +25,7 @@ body {
 .header {
     display: flex;
     justify-content: center;
-    box-shadow: 0px 5px 5px;
+    box-shadow: 0px 5px 5px $shadow;
     margin-top: 5px;
     & img {
         padding-bottom: 0px;
@@ -43,7 +45,7 @@ body {
 }
 
 .section_presentation {
-    padding: 0;
+    padding: 0 $main_margin;
     display: flex;
     flex-flow: wrap column;
     align-items: center;
@@ -57,36 +59,38 @@ body {
 }
 
 .btn {
+    background: linear-gradient(170deg, $secondary, $primary);
     color: white;
     font-size: large;
     padding: 1rem;
-    border-radius: 40px;
+    border-radius: 50px;
     border: none;
-    margin-bottom: 6vw;
-    box-shadow: 4px 4px 2px;
+    margin-bottom: 7vw;
+    box-shadow: 4px 4px 2px $shadow;
     width: 60vw;
+    transition: 250ms;
     &:hover {
-        background : linear-gradient(
-            170deg,
-            rgba(255, 121, 218, 0.8) 0%,
-            rgba(214, 108, 219, 0.8) 39%,
-            rgba(171, 94, 220, 0.8) 85%,
-            rgba(155, 89, 220, 0.8) 100%,
-        );
-    box-shadow: 8px 8px 2px;
+      background: linear-gradient(
+        170deg,
+        rgba(255, 121, 218, 0.8) 0%,
+        rgba(214, 108, 219, 0.8) 39%,
+        rgba(171, 94, 220, 0.8) 85%,
+        rgba(155, 89, 220, 0.8) 100%
+      );
+      box-shadow: 8px 8px 2px $darkshadow;
     }
-}
+  }
 
 .section_fonctionnement {
-    padding: 0 5vw;
-    padding-bottom: 20px;
+   padding: 0 $main_margin 5vw $main_margin;
+
     &__btn {
         display: flex;
         flex-direction: row;
         background-color: #f6f6f6dd;
         margin: 1rem;
         padding: 1rem;
-        box-shadow: 1px 1px 2px lightgrey;
+        box-shadow: 1px 1px 2px $shadow;
         border-radius: 15px 15px;
         text-align: center;
         height: 4rem;
@@ -95,7 +99,7 @@ body {
 
     &__ordre {
         border-radius: 50%;
-        background-color: #9356dc;
+        background-color: $primary;
         color: white;
         position: relative;
         right: 28px;
@@ -110,10 +114,14 @@ body {
     }
 }
 
+.fa-store {
+    color: $primary;
+}
+
 
 .section_restaurant {
-    padding: 0px 5vw;
-    background-color: #f6f6f6;
+    padding: 0px $main_margin;
+    background-color: $bckg;
     align-items: center;
     &__titre {
         align-self: start;
@@ -124,7 +132,7 @@ body {
         height: fit-content;
         flex: 100%;
         margin: 3vw 0px;
-        background-color: #f6f6f6;
+        background-color: $card_bckg;
         display: flex;
         overflow: hidden;
         width: 90vw;
@@ -140,9 +148,9 @@ body {
     &__img {
         position: relative;
         &__nouveau {
-            font-weight: bold;
+            font-weight: bolder;
             z-index: 1;
-            background-color: #99e2d0;
+            background-color: $tertiary;
             width: 80px;
             display: block;
             color: #008766;
