@@ -1,5 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 .footer {
-  background-color: blue;
+  background-color: #353535;
+  color: white;
+  padding: 5vw;
+}
+
+.footer_h5 {
+  font-family: shrikhand, cursive;
+  font-size: larger;
+  margin-top: 0px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:visited {
+  color: white;
 }
 
 * {
@@ -28,8 +46,8 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0px 5px 5px;
-          box-shadow: 0px 5px 5px;
+  -webkit-box-shadow: 0px 5px 5px lightgrey;
+          box-shadow: 0px 5px 5px lightgrey;
   margin-top: 5px;
 }
 
@@ -54,7 +72,7 @@ a:visited {
 }
 
 .section_presentation {
-  padding: 0;
+  padding: 0 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,26 +96,28 @@ a:visited {
 }
 
 .btn {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
   color: white;
   font-size: large;
   padding: 1rem;
-  border-radius: 40px;
+  border-radius: 50px;
   border: none;
-  margin-bottom: 6vw;
-  -webkit-box-shadow: 4px 4px 2px;
-          box-shadow: 4px 4px 2px;
+  margin-bottom: 7vw;
+  -webkit-box-shadow: 4px 4px 2px lightgrey;
+          box-shadow: 4px 4px 2px lightgrey;
   width: 60vw;
+  -webkit-transition: 250ms;
+  transition: 250ms;
 }
 
 .btn:hover {
   background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
-  -webkit-box-shadow: 8px 8px 2px;
-          box-shadow: 8px 8px 2px;
+  -webkit-box-shadow: 8px 8px 2px #adadad;
+          box-shadow: 8px 8px 2px #adadad;
 }
 
 .section_fonctionnement {
-  padding: 0 5vw;
-  padding-bottom: 20px;
+  padding: 0 5vw 5vw 5vw;
 }
 
 .section_fonctionnement__btn {
@@ -122,7 +142,7 @@ a:visited {
 
 .section_fonctionnement__btn__ordre {
   border-radius: 50%;
-  background-color: #9356dc;
+  background-color: #9356DC;
   color: white;
   position: relative;
   right: 28px;
@@ -134,9 +154,13 @@ a:visited {
   bottom: 17px;
 }
 
+.fa-store {
+  color: #9356DC;
+}
+
 .section_restaurant {
   padding: 0px 5vw;
-  background-color: #f6f6f6;
+  background-color: #f8f8f8;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -156,7 +180,7 @@ a:visited {
       -ms-flex: 100%;
           flex: 100%;
   margin: 3vw 0px;
-  background-color: #f6f6f6;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,9 +202,9 @@ a:visited {
 }
 
 .card__img__nouveau {
-  font-weight: bold;
+  font-weight: bolder;
   z-index: 1;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   width: 80px;
   display: block;
   color: #008766;
