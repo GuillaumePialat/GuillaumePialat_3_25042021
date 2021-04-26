@@ -21,9 +21,15 @@
 }
 
 body {
-  background-color: #f8f8f8;
-  margin: 0px;
+  background-color: #555;
   font-family: Roboto, sans-serif;
+  margin: 0px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.background {
+  background-color: #f6f6f6;
 }
 
 a {
@@ -61,4 +67,30 @@ a:visited {
   top: 20px;
   right: 50px;
   font-size: x-large;
+}
+
+.restaurant img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurant__nom {
+  border-top-left-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+  padding: 5px 5vw;
+  background-color: #f6f6f6;
+  font-family: shrikhand, cursive;
+  font-size: large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 @import "base/variables.scss";
 @import "base/footer.scss";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 
 body {
-    background-color: $bckg;
-    margin: 0px;
+    background-color: #555;
     font-family: Roboto, sans-serif;
+    margin: 0px;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.background {
+    background-color: #f6f6f6;
 }
 
 a {
@@ -36,4 +42,23 @@ a {
     top: 20px;
     right: 50px;
     font-size: x-large;
+}
+
+.restaurant {
+    & img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__nom {
+        border-top-left-radius: 40px 40px;
+        border-top-right-radius: 40px 40px;
+        padding: 5px $main_margin;
+        background-color: #f6f6f6;
+        font-family: shrikhand, cursive;
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
