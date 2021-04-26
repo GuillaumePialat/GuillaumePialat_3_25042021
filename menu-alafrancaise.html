@@ -11,184 +11,172 @@
     <title>ohmyfood</title>
 </head>
 
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="css/menu.css" />
-    <title>ohmyfood</title>
-</head>
-
 <body>
-    <header class="header">
-        <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
-        <h1><img src="images/logo/ohmyfood@2x.svg" alt="logo"></h1>
-    </header>
+    <div class="background">
+        <header class="header">
+            <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+            <h1><img src="images/logo/ohmyfood@2x.svg" alt="logo"></h1>
+        </header>
 
-    <section class="restaurant">
-        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo a la francaise">
-        <div class="nom_restaurant">
-            <h2>À la Française</h2>
-            <i class="far fa-heart"></i>
-        </div>
-    </section>
-
-    <section class="menu">
-
-        <!-- entrées -->
-        <article class="entrees_menu">
-            <div>
-                <h3>ENTRÉES</h3>
-                <div class="espace_h3"></div>
+        <section class="restaurant">
+            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo a la francaise">
+            <div class="restaurant__nom">
+                <h2>À la Française</h2>
+                <i class="far fa-heart"></i>
             </div>
-            <div class="menu__restaurant__entrees card">
-                <div class="card__infos">
-                    <h4>Tartare de poulpe acidulé</h4>
-                    <div class="card__infos__description">
-                        <p class="card__infos__description__accompagnement">
-                            Aux zestes d'orange
-                        </p>
-                        <p class="card__infos__description__prix">25€</p>
-                    </div>
+        </section>
+
+        <section class="menu">
+            <!-- entrées -->
+            <article class="entrees_menu">
+                <div>
+                    <h3>ENTRÉES</h3>
+                    <div class="espace_h3"></div>
                 </div>
-                <div class="card__check"><i class="fas fa-check-circle"></i></div>
-            </div>
-
-            <div class="menu__restaurant__entrees card">
-                <div class="card__infos">
-                    <h4>Velouté de légumes d'antan</h4>
-                    <div class="card__infos__description">
-                        <p class="card__infos__description__accompagnement">
-                            Carotte, panais, topinambour
-                        </p>
-                        <p class="card__infos__description__prix">35€</p>
+                <div class="menu__restaurant__entrees card">
+                    <div class="card__infos">
+                        <h4>Tartare de poulpe acidulé</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Aux zestes d'orange
+                            </p>
+                            <p class="card__infos__description__prix">25€</p>
+                        </div>
                     </div>
                     <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
 
-            <div class="menu__restaurant__entrees card">
-                <div class="card__infos">
-                    <h4>Soupe à l'oignon</h4>
-                    <div class="card__infos__description">
-                        <p class="card__infos__description__accompagnement">
-                            Revisité
-                        </p>
-                        <p class="card__infos__description__prix">20€</p>
+                <div class="menu__restaurant__entrees card">
+                    <div class="card__infos">
+                        <h4>Velouté de légumes d'antan</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Carotte, panais, topinambour
+                            </p>
+                            <p class="card__infos__description__prix">35€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
                     </div>
-                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
-        </article>
 
-        <!-- plats -->
-        <article class="plats_menu">
-            <div>
-                <h3>Plats</h3>
-                <div class="espace_h3"></div>
-            </div>
-
-            <div class="menu__restaurant__plats card">
-                <div class="card__infos">
-                    <h4>Coquilles Saint-Jacques</h4>
-                    <div class="card__infos__description">
-                        <p class="card__infos__description__accompagnement">
-                            Accompagnées d'une purée de panais
-                        </p>
-                        <p class="card__infos__description__prix">40€</p>
+                <div class="menu__restaurant__entrees card">
+                    <div class="card__infos">
+                        <h4>Soupe à l'oignon</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Revisité
+                            </p>
+                            <p class="card__infos__description__prix">20€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
                     </div>
-                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
+            </article>
 
-            <div class="menu__restaurant__plats card">
-                <div class="card__infos">
-                    <h4>Magret de canard</h4>
-                    <div class="card__infos__description">
-                        <p class="card__infos__description__accompagnement">
-                            Et parmentier de pommes de terre
-                        </p>
-                        <p class="card__infos__description__prix">35€</p>
+            <!-- plats -->
+            <article class="plats_menu">
+                <div>
+                    <h3>Plats</h3>
+                    <div class="espace_h3"></div>
+                </div>
+
+                <div class="menu__restaurant__plats card">
+                    <div class="card__infos">
+                        <h4>Coquilles Saint-Jacques</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Accompagnées d'une purée de panais
+                            </p>
+                            <p class="card__infos__description__prix">40€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
                     </div>
-                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
 
-            <div class="menu__restaurant__plats card">
-                <div class="card__infos">
-                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-                    <div class="card__infos__description">
-                        <p class="card__infos__description__accompagnement">
-                            Sur son lit de gnocchis aux légumes
-                        </p>
-                        <p class="card__infos__description__prix">44€</p>
+                <div class="menu__restaurant__plats card">
+                    <div class="card__infos">
+                        <h4>Magret de canard</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Et parmentier de pommes de terre
+                            </p>
+                            <p class="card__infos__description__prix">35€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
                     </div>
-                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
-        </article>
 
-        <!-- désserts -->
-        <article class="desserts_menu">
-            <div>
-                <h3>DÉSSERTS</h3>
-                <div class="espace_h3"></div>
-            </div>
-
-            <div class="menu__restaurant__desserts card">
-                <div class="card__infos">
-                    <h4>Pétales de violettes glacés</h4>
-                    <div class="card__infos__description">
-                        <p class="card__infos__description__accompagnement">
-                            Et purée de noisettes
-                        </p>
-                        <p class="card__infos__description__prix">18€</p>
+                <div class="menu__restaurant__plats card">
+                    <div class="card__infos">
+                        <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Sur son lit de gnocchis aux légumes
+                            </p>
+                            <p class="card__infos__description__prix">44€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
                     </div>
-                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
+            </article>
 
-            <div class="menu__restaurant__desserts card">
-                <div class="card__infos">
-                    <h4>Fondant au chocolat</h4>
-                    <div class="card__infos__description">
-                        <p class="card__infos__description__accompagnement">
-                            Revisité
-                        </p>
-                        <p class="card__infos__description__prix">22€</p>
+            <!-- désserts -->
+            <article class="desserts_menu">
+                <div>
+                    <h3>DÉSSERTS</h3>
+                    <div class="espace_h3"></div>
+                </div>
+
+                <div class="menu__restaurant__desserts card">
+                    <div class="card__infos">
+                        <h4>Pétales de violettes glacés</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Et purée de noisettes
+                            </p>
+                            <p class="card__infos__description__prix">18€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
                     </div>
-                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
 
-            <div class="menu__restaurant__desserts card">
-                <div class="card__infos">
-                    <h4>Millefeuille croustillant</h4>
-                    <div class="card__infos__description">
-                        <p class="card__infos__description__accompagnement">
-                            Myrtilles et pâte d’amande
-                        </p>
-                        <p class="card__infos__description__prix">22€</p>
+                <div class="menu__restaurant__desserts card">
+                    <div class="card__infos">
+                        <h4>Fondant au chocolat</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Revisité
+                            </p>
+                            <p class="card__infos__description__prix">22€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
                     </div>
-                    <div class="card__check"><i class="fas fa-check-circle"></i></div>
                 </div>
-            </div>
-        </article>
-        <button class="btn">Commander</button>
-    </section>
 
-    <footer class="footer">
-        <h5 class="footer_h5">ohmyfood</h5>
-        <p class="footer_paragraphe"><i class="fas fa-utensils"></i>&nbsp;Proposer un restaurant</p>
-        <p class="footer_paragraphe"><i class="fas fa-hands-helping"></i>&nbsp;Devenir partenaire</p>
-        <p class="footer_paragraphe">Mentions légales</p>
-        <p class="footer_paragraphe">Contact</p>
-    </footer>
+                <div class="menu__restaurant__desserts card">
+                    <div class="card__infos">
+                        <h4>Millefeuille croustillant</h4>
+                        <div class="card__infos__description">
+                            <p class="card__infos__description__accompagnement">
+                                Myrtilles et pâte d’amande
+                            </p>
+                            <p class="card__infos__description__prix">22€</p>
+                        </div>
+                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
+            </article>
+            <button class="btn">Commander</button>
+        </section>
+
+        <footer class="footer">
+            <h5 class="footer_h5">ohmyfood</h5>
+            <p class="footer_paragraphe"><i class="fas fa-utensils"></i>&nbsp;Proposer un restaurant</p>
+            <p class="footer_paragraphe"><i class="fas fa-hands-helping"></i>&nbsp;Devenir partenaire</p>
+            <p class="footer_paragraphe">Mentions légales</p>
+            <p class="footer_paragraphe">Contact</p>
+        </footer>
+    </div>
 </body>
 
 </html>
