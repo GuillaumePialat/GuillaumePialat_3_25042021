@@ -62,3 +62,73 @@ a {
         justify-content: space-between;
     }
 }
+
+.menu {
+    & h3 {
+        padding-bottom: 0px;
+        margin: 0px $main_margin;
+    }
+    & h4, 
+    & p {
+        padding: 0.30rem $main_margin;
+    }
+    & h4 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: larger;
+    }
+    & p {
+        margin-bottom: 5px;
+    }
+    display: flex;
+    flex-direction: column;
+    padding: 0 0vw;
+}
+
+.card {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &__infos {
+        display: flex;
+        flex: 100%;
+        white-space: nowrap;
+        flex-direction: column;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &__description {
+            display: flex;
+            flex: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            & p {
+                margin-top: 2px;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            &__accompagnement {
+                text-overflow: ellipsis;
+            }
+            &__prix {
+                font-weight: bold;
+            }
+        }       
+    }
+    &__check {
+        flex: 0%;
+        color: #f6f6f6;
+        background-color: $tertiary;
+        font-size: xx-large;
+        text-align: center;
+        height: 2.1em;
+        line-height: 2.1em;
+        white-space: nowrap;
+        border-top-right-radius: 20px 20px;
+        border-bottom-right-radius: 20px 20px;
+        cursor: pointer;
+    }
+}

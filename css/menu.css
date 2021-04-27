@@ -94,3 +94,113 @@ a:visited {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0vw;
+}
+
+.menu h3 {
+  padding-bottom: 0px;
+  margin: 0px 5vw;
+}
+
+.menu h4,
+.menu p {
+  padding: 0.3rem 5vw;
+}
+
+.menu h4 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: larger;
+}
+
+.menu p {
+  margin-bottom: 5px;
+}
+
+.card {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  white-space: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card__infos__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__infos__description p {
+  margin-top: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card__infos__description__accompagnement {
+  text-overflow: ellipsis;
+}
+
+.card__infos__description__prix {
+  font-weight: bold;
+}
+
+.card__check {
+  -webkit-box-flex: 0%;
+      -ms-flex: 0%;
+          flex: 0%;
+  color: #f6f6f6;
+  background-color: #99E2D0;
+  font-size: xx-large;
+  text-align: center;
+  height: 2.1em;
+  line-height: 2.1em;
+  white-space: nowrap;
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  cursor: pointer;
+}
