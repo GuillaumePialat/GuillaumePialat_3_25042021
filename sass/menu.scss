@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 @import "base/variables.scss";
 @import "base/footer.scss";
+@import "base/mixins.scss";
 
 body {
     background-color: #555;
@@ -94,6 +95,7 @@ a {
 }
 
 .card {
+    @include cardlook
     margin: 1rem;
     display: flex;
     flex-direction: row;
@@ -138,6 +140,8 @@ a {
         border-top-right-radius: 20px 20px;
         border-bottom-right-radius: 20px 20px;
         cursor: pointer;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
     }
 }
 
