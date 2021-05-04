@@ -20,6 +20,20 @@
   color: white;
 }
 
+.fa-stack {
+  position: relative;
+  font-size: xx-large;
+  bottom: 25px;
+  cursor: pointer;
+}
+
+.fa-stack :nth-child(2) {
+  color: transparent;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+  padding: 0px;
+}
+
 body {
   background-color: #555;
   font-family: Roboto, sans-serif;

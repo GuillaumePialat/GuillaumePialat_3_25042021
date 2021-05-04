@@ -1,0 +1,11 @@
+.fa-stack {
+    position: relative;
+    font-size: xx-large;
+    bottom: 25px;
+    cursor: pointer;
+        & :nth-child(2) {
+        color: transparent;
+        transition: all 800ms;
+        padding: 0px;
+        }        
+}
