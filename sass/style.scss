@@ -1,6 +1,7 @@
 @import "base/variables.scss";
 @import "base/footer.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+@import "base/heart.scss";
 
 * {
     box-sizing: border-box;
@@ -10,6 +11,8 @@
 body {
     margin: 0px;
     font-family: Roboto, sans-serif;
+    margin: 0 auto;
+    background: #555;
   }
 
 .background {
@@ -64,6 +67,7 @@ body {
     
 }
 
+
 .btn {
     background: linear-gradient(170deg, $secondary, $primary);
     color: white;
@@ -96,7 +100,7 @@ body {
         background-color: #f6f6f6dd;
         margin: 1rem;
         padding: 1rem;
-        box-shadow: 1px 1px 2px $shadow;
+        box-shadow: 4px 4px 2px $shadow;
         border-radius: 15px 15px;
         text-align: center;
         height: 4rem;
@@ -135,10 +139,12 @@ body {
 }
 
 .card {
+        background-color: white;
+        box-shadow: 2px 2px 2px $shadow;
+        border-radius: 20px 20px;
         height: fit-content;
         flex: 100%;
         margin: 3vw 0px;
-        background-color: $card_bckg;
         display: flex;
         overflow: hidden;
         width: 90vw;
@@ -197,4 +203,20 @@ body {
     } 
 }
 
-   
+@media screen and (min-width: 1280px) {
+    .section_restaurant__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        max-width: 450px;
+        margin: 2rem;
+        margin-bottom: 4rem;
+        &__img {
+            max-width: 450px;
+        }
+    }
+}
+  
