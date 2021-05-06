@@ -34,6 +34,16 @@
   padding: 0px;
 }
 
+.fa-stack :nth-child(2):hover {
+  background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  font-size: small;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
 body {
   background-color: #555;
   font-family: Roboto, sans-serif;
