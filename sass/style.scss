@@ -2,6 +2,7 @@
 @import "base/footer.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 @import "base/heart.scss";
+@import "base/spinner.scss";
 
 * {
     box-sizing: border-box;
@@ -151,8 +152,8 @@ body {
 
     & img {
         object-fit: cover;
-        height: 150px;
-        width: 90vw;
+        height: 210px;
+        width: 100%;
         border-top-left-radius: 15px 15px;
         border-top-right-radius: 15px 15px;
     }
@@ -216,6 +217,7 @@ body {
         margin-bottom: 4rem;
         &__img {
             max-width: 450px;
+            object-fit: cover;
         }
     }
 }
