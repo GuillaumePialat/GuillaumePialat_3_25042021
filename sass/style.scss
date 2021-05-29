@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 @import "base/heart.scss";
 @import "base/spinner.scss";
+@import "base/mixins.scss";
 
 * {
     box-sizing: border-box;
@@ -149,6 +150,7 @@ body {
         display: flex;
         overflow: hidden;
         width: 90vw;
+        @include cardlook;
 
     & img {
         object-fit: cover;

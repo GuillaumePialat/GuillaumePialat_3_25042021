@@ -3,8 +3,8 @@ main,
 footer {
   -webkit-animation-name: opacity;
           animation-name: opacity;
-  -webkit-animation-duration: 4000ms;
-          animation-duration: 4000ms;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
@@ -38,8 +38,8 @@ footer {
   border-radius: 50%;
   -webkit-animation-name: spin;
           animation-name: spin;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);

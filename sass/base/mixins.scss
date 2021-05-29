@@ -4,3 +4,21 @@
     border-radius: 20px 20px;
     height: fit-content;
 }
+
+@mixin card_apparence {
+    & .card {
+        animation-name: appar;
+        animation-duration: 1000ms;
+        animation-fill-mode: backwards;
+    }
+    @keyframes appar {
+        from {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }        
+    }
+}

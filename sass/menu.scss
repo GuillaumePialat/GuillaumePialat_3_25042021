@@ -95,6 +95,24 @@ a {
     margin-left: $main_margin;
 }
 
+.entrees_menu {
+    @include card_apparence;
+}
+
+.plats_menu {
+    @include card_apparence;
+    & .card {
+        animation-delay: 500ms ;
+    }
+}
+
+.desserts_menu {
+    @include card_apparence;
+    & .card {
+        animation-delay: 1s;
+    }
+}
+
 .card {
     @include cardlook
     margin: 1rem;

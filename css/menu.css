@@ -29,19 +29,51 @@
 
 .fa-stack :nth-child(2) {
   color: transparent;
-  -webkit-transition: all 800ms;
-  transition: all 800ms;
+  /*transition: all 800ms;*/
   padding: 0px;
 }
 
 .fa-stack :nth-child(2):hover {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: fill-tank;
+          animation-name: fill-tank;
   background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(to bottom left, #9356DC, #FF79DA);
   font-size: small;
-  -webkit-transform: scale(3);
-          transform: scale(3);
+  /*transform: scale(3);*/
   -webkit-background-clip: text;
   -moz-background-clip: text;
+}
+
+@-webkit-keyframes fill-tank {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@keyframes fill-tank {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
 }
 
 body {
@@ -157,6 +189,95 @@ a:visited {
   margin: 0;
   padding: 0;
   margin-left: 5vw;
+}
+
+.entrees_menu .card {
+  -webkit-animation-name: appar;
+          animation-name: appar;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes appar {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes appar {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.plats_menu .card {
+  -webkit-animation-name: appar;
+          animation-name: appar;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@keyframes appar {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.plats_menu .card {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.desserts_menu .card {
+  -webkit-animation-name: appar;
+          animation-name: appar;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@keyframes appar {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.desserts_menu .card {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .card {
