@@ -55,6 +55,8 @@ a {
     &__nom {
         border-top-left-radius: 40px 40px;
         border-top-right-radius: 40px 40px;
+        transform: translateY(-80px);
+        margin-bottom: -80px;
         padding: 5px $main_margin;
         background-color: #f6f6f6;
         font-family: shrikhand, cursive;
@@ -119,6 +121,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: all 2000ms;
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -129,6 +132,7 @@ a {
         flex-direction: column;
         text-overflow: ellipsis;
         overflow: hidden;
+        transition: all $transitiontime;
         &__description {
             display: flex;
             flex: 100%;
@@ -158,11 +162,31 @@ a {
         white-space: nowrap;
         border-top-right-radius: 20px 20px;
         border-bottom-right-radius: 20px 20px;
+        transform: translateX(100px);
         cursor: pointer;
-        padding-right: 0.5em;
-        padding-left: 0.5em;
+        transition: all $transitiontime;
     }
+
+        &:hover > &__check {
+        flex: 25%;
+        transform: translateX(0px);
+        background-color: $tertiary;
+        cursor: pointer;
+        color: $bckg;
+    }
+        &:hover > &__infos {
+            flex: 75%;
+        }
+
+        &:hover .fa-check-circle {
+            transform: rotate(0deg);
+        }
 }
+
+.fa-check-circle {
+    transform: rotate(359deg);
+    transition: transform $transitiontime;
+  }
 
 .btn {
     width: 200px;

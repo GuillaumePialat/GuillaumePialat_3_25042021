@@ -135,6 +135,9 @@ a:visited {
 .restaurant__nom {
   border-top-left-radius: 40px 40px;
   border-top-right-radius: 40px 40px;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+  margin-bottom: -80px;
   padding: 5px 5vw;
   background-color: #f6f6f6;
   font-family: shrikhand, cursive;
@@ -299,6 +302,8 @@ a:visited {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 2000ms;
+  transition: all 2000ms;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -318,6 +323,8 @@ a:visited {
           flex-direction: column;
   text-overflow: ellipsis;
   overflow: hidden;
+  -webkit-transition: all 700ms;
+  transition: all 700ms;
 }
 
 .card__infos__description {
@@ -363,9 +370,42 @@ a:visited {
   white-space: nowrap;
   border-top-right-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
   cursor: pointer;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
+  -webkit-transition: all 700ms;
+  transition: all 700ms;
+}
+
+.card:hover > .card__check {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  background-color: #99E2D0;
+  cursor: pointer;
+  color: #f8f8f8;
+}
+
+.card:hover > .card__infos {
+  -webkit-box-flex: 75%;
+      -ms-flex: 75%;
+          flex: 75%;
+}
+
+.card:hover .fa-check-circle {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.fa-check-circle {
+  -webkit-transform: rotate(359deg);
+          transform: rotate(359deg);
+  -webkit-transition: -webkit-transform 700ms;
+  transition: -webkit-transform 700ms;
+  transition: transform 700ms;
+  transition: transform 700ms, -webkit-transform 700ms;
 }
 
 .btn {
