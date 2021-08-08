@@ -21,6 +21,7 @@ body {
     background: $bckg;
 }
   a {
+    width: 100%;
     color: black;
     text-decoration: none;
     &:visited {
@@ -223,4 +224,3 @@ body {
         }
     }
 }
-  
