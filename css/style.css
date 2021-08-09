@@ -228,7 +228,7 @@ a:visited {
 }
 
 .localisation {
-  padding: 5 0vw;
+  padding: 0 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
